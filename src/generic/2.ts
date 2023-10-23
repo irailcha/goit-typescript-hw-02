@@ -11,7 +11,12 @@ type AllType = {
   weight: number
 }
 
-function compare (top, bottom): AllType {
+type NewType= {
+top: Pick<AllType, 'name' | 'color'>
+bottom: Pick<AllType, 'position' | 'weight'>
+}
+
+function compare (top: NewType['top'], bottom: NewType['bottom']): AllType {
   return {
     name: top.name,
     color: top.color,

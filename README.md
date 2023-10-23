@@ -74,6 +74,10 @@ function customError() {
 ### Завдання 9
 У вас є два об'єкти:
 ```ts
+
+
+
+
 const page1 = {
   title: 'The awesome page',
   likes: 100,
